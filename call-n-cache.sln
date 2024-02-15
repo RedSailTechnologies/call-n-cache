@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7C599B46-5EA4-4F28-B623-39E8624D889A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CallNCache", "src\CallNCache\CallNCache.csproj", "{DB88C8F1-B593-42C5-989F-24E9C2B79166}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB88C8F1-B593-42C5-989F-24E9C2B79166}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB88C8F1-B593-42C5-989F-24E9C2B79166}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB88C8F1-B593-42C5-989F-24E9C2B79166}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB88C8F1-B593-42C5-989F-24E9C2B79166}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DB88C8F1-B593-42C5-989F-24E9C2B79166} = {7C599B46-5EA4-4F28-B623-39E8624D889A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46473F73-6AA0-4B29-8340-C53813F7BBB2}
+	EndGlobalSection
+EndGlobal

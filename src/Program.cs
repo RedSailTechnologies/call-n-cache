@@ -63,11 +63,19 @@ app.MapGet("/", async () =>
 
         return Results.Ok(jsonObject);
     }
-    catch (HttpRequestException e)
+    catch (Exception e)
     {
         Console.WriteLine("\nException Caught!");
         Console.WriteLine("Message: {0} ", e.Message);
-        return Results.BadRequest(e.Message);
+
+        if (builder.Configuration.GetValue<bool>("ShowExceptions"))
+        {
+            throw new InvalidOperationException(e.Message);
+        }
+        else
+        {
+            return Results.NoContent();
+        }
     }
 }).CacheOutput();
 

@@ -115,3 +115,4 @@ envVars:
   COMPlus_EnableDiagnostics: "0"
   ASPNETCORE_ENVIRONMENT: Production
   ASPNETCORE_URLS: http://+:8080;http://+:58080
+  ShowExceptions: false

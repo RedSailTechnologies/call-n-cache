@@ -116,3 +116,12 @@ envVars:
   ASPNETCORE_ENVIRONMENT: Production
   ASPNETCORE_URLS: http://+:8080;http://+:58080
   ShowExceptions: false
+
+jsonExporter:
+  enabled: false
+  port: 7979
+  image:
+    repository: redsailtechnologies/call-n-cache
+    pullPolicy: IfNotPresent
+    tag: "0.6.0"
+  volumeMounts: []

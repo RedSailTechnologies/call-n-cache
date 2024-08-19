@@ -12,4 +12,5 @@ Headers__API-Key: token
 Headers__X-API-KEY: token
 Base64Payload: eyJoZWxsbyI6IndvcmxkISJ9
 ShowException: false
+Timeout: 2500
 ```

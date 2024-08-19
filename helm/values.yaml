@@ -122,7 +122,7 @@ jsonExporter:
   enabled: false
   port: 7979
   image:
-    repository: redsailtechnologies/call-n-cache
+    repository: prometheuscommunity/json-exporter
     pullPolicy: IfNotPresent
-    tag: "0.6.0"
+    tag: "v0.6.0"
   volumeMounts: []

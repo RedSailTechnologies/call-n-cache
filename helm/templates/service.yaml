@@ -15,5 +15,11 @@ spec:
       targetPort: metrics
       protocol: TCP
       name: metrics
+    {{- if .Values.jsonExporter.enabled }}
+    - port: {{ .Values.jsonExporter.port }}
+      targetPort: json-metrics
+      protocol: TCP
+      name: json-metrics
+    {{- end }}
   selector:
     {{- include "call-n-cache.selectorLabels" . | nindent 4 }}

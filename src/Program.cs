@@ -35,6 +35,12 @@ app.MapGet("/", async () =>
 
     try
     {
+        var timeout = builder.Configuration.GetValue<double>("Timeout");
+        if (timeout > 0)
+        {
+            client.Timeout = TimeSpan.FromMilliseconds(timeout);
+        }
+
         var headers = builder.Configuration.GetSection("Headers").Get<Dictionary<string, string>>();
         if (headers != null && headers.Count > 0)
         {
